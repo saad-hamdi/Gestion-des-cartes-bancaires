@@ -5,7 +5,7 @@ import random
 class Bank:
     def __init__(self,window):
         self.window=window
-        self.window.iconbitmap(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\bank.ico")
+        self.window.iconbitmap("bank.ico")
         self.window.title("la gestion des cartes bancaires")
         self.window.geometry('1920x1080+0+0')
         self.window.state("zoomed")
@@ -21,7 +21,7 @@ class Bank:
 
         self.agent=Frame(self.centerFrame,pady=100,padx=100)
         self.agent.grid(row=0,column=0)
-        self.img=Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\agent.png")
+        self.img=Image.open("agent.png")
         self.img.thumbnail((150,150))
         self.new_image=ImageTk.PhotoImage(self.img)
         self.imgagent=Label(self.agent,image=self.new_image)
@@ -31,7 +31,7 @@ class Bank:
 
         self.client=Frame(self.centerFrame,pady=100,padx=100)
         self.client.grid(row=0,column=1)
-        self.img2=Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\client.png")
+        self.img2=Image.open("client.png")
         self.img2.thumbnail((150,150))
         self.new_image2=ImageTk.PhotoImage(self.img2)
         self.imgclient=Label(self.client,image=self.new_image2)
@@ -41,7 +41,7 @@ class Bank:
 
         self.developer=Frame(self.centerFrame,pady=100,padx=100)
         self.developer.grid(row=0,column=2)
-        self.img3=Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\developer.png")
+        self.img3=Image.open("developer.png")
         self.img3.thumbnail((150,150))
         self.new_image3=ImageTk.PhotoImage(self.img3)
         self.imgprogrammer=Label(self.developer,image=self.new_image3)
@@ -59,7 +59,7 @@ class Bank:
 #agent window
     def openagent(self):
         self.window=Toplevel()
-        self.window.iconbitmap(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\agent.ico")
+        self.window.iconbitmap("agent.ico")
         self.window.title("Agent")
         self.window.geometry("1920x1080+0+0")
         self.window.state("zoomed")
@@ -74,7 +74,7 @@ class Bank:
         #generer numero de compte
         self.genererframe=Frame(self.centerFrameagent,pady=100,padx=100)
         self.genererframe.grid(row=0,column=0)
-        self.imggenerer=Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\search1.png")
+        self.imggenerer=Image.open("search1.png")
         self.imggenerer.thumbnail((150,150))
         self.new_imagegenerer=ImageTk.PhotoImage(self.imggenerer)
         self.imggenererlbl=Label(self.genererframe,image=self.new_imagegenerer)
@@ -85,7 +85,7 @@ class Bank:
         #voir les numeros de clients et leurs codes secrets
         self.voirframe=Frame(self.centerFrameagent,pady=100,padx=100)
         self.voirframe.grid(row=0,column=1)
-        self.imgvoir=Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\generer.png")
+        self.imgvoir=Image.open("generer.png")
         self.imgvoir.thumbnail((150,150))
         self.new_imagevoir=ImageTk.PhotoImage(self.imgvoir)
         self.imgvoirlbl=Label(self.voirframe,image=self.new_imagevoir)
@@ -95,7 +95,7 @@ class Bank:
         #voir les comptes
         self.comptesframe=Frame(self.centerFrameagent,pady=100,padx=100)
         self.comptesframe.grid(row=0,column=2)
-        self.imgcomptes=Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\manipsts.png")
+        self.imgcomptes=Image.open("manipsts.png")
         self.imgcomptes.thumbnail((150,150))
         self.new_imagecomptes=ImageTk.PhotoImage(self.imgcomptes)
         self.imgcompteslbl=Label(self.comptesframe,image=self.new_imagecomptes)
@@ -110,7 +110,7 @@ class Bank:
 #client window
     def openclient(self):
         self.window=Toplevel()
-        self.window.iconbitmap(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\client.ico")
+        self.window.iconbitmap("client.ico")
         self.window.title("Client")
         self.window.geometry("1920x1080+0+0")
         self.window.state("zoomed")
@@ -125,7 +125,7 @@ class Bank:
         #login frame
         self.picframe=Frame(self.centerFrame,pady=100,padx=100)
         self.picframe.grid(row=0,column=0)
-        self.imgl1=Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\login.png")
+        self.imgl1=Image.open("login.png")
         self.imgl1.thumbnail((200,200))
         self.new_imagel1=ImageTk.PhotoImage(self.imgl1)
         self.imglogin=Label(self.picframe,image=self.new_imagel1)
@@ -284,7 +284,7 @@ class Bank:
     #developer window
     def opendeveloper(self):
         self.window=Toplevel()
-        self.window.iconbitmap(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\developer.ico")
+        self.window.iconbitmap("developer.ico")
         self.window.title("Developer")
         self.window.geometry("1920x1080+0+0")
         self.window.state("zoomed")
@@ -299,7 +299,7 @@ class Bank:
         #pic frame
         self.developerframe=Frame(self.centerFramedeveloper,pady=100,padx=100)
         self.developerframe.grid(row=0,column=0)
-        self.imgdeveloper=Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\programmer.png")
+        self.imgdeveloper=Image.open("programmer.png")
         self.imgdeveloper.thumbnail((200,200))
         self.new_imagedeveloper=ImageTk.PhotoImage(self.imgdeveloper)
         self.imglbldev=Label(self.developerframe,image=self.new_imagedeveloper)
@@ -320,7 +320,7 @@ class Bank:
         #pc pic frame
         self.pcframe=Frame(self.centerFramedeveloper,pady=100,padx=100)
         self.pcframe.grid(row=0,column=2)
-        self.imgpc=Image.open(r"C:\\Users\\HP\\OneDrive\\Desktop\\Projet\\avec modification\\images\\pc.png")
+        self.imgpc=Image.open("pc.png")
         self.imgpc.thumbnail((200,200))
         self.new_imagepc=ImageTk.PhotoImage(self.imgpc)
         self.imglblpc=Label(self.pcframe,image=self.new_imagepc)
